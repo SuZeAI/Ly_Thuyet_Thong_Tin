@@ -1,0 +1,8 @@
+# Test case 1:
+Input:
+DMC = {
+    "x": ["x1", "x2", "x3"],
+    "p": [0.2, 0.3, 0.5]
+}
+Output:
+plot

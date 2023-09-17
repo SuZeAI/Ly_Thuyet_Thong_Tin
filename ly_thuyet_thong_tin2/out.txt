@@ -1,0 +1,147 @@
+1. Độ đo thông tin:
+$$
+\begin{aligned}
+& I(x_i)=f(\frac{1}{p(x_i)})
+& I(x_i)=\log \frac{1}{p(x_i)}=-\log p(x_i)
+\end{aligned}
+$$
+2. Lượng tin riêng
+$$
+I(x_i)=-\log p(x_i)(\mathrm{dvtt})
+$$
+3. Lượng tin riêng của nguồn
+$$
+\begin{aligned}
+& I(X)=\sum_i p(x_i) \cdot I(x_i) \\
+& =-\sum p(x_i) \cdot \log p(x_i)(\mathrm{dvtt} / \mathrm{tin})
+\end{aligned}
+$$
+4. Entropi của nguôn
+- Rời rạc
+$$
+\begin{aligned}
+& H(x_i)=I(x_i)=-\log p(x_i) \\
+& H(X)=I(X)=-\sum p(x_i) \cdot \log p(x_i)
+\end{aligned}
+$$
+- Liên tục
+$$
+H(X)=\int_x w(x) d x
+$$
+5. Lượng tin đồng thời
+- Rời rạc
+$$
+\begin{aligned}
+& I(x_i, y_i)=-\log P(x_i, y_i) \\
+& I(x_i, y_i)=I(x_i)+I(y_i)-I(x_i ; y_i) \\
+& I(X, Y)=H(X, Y)=-\sum_{i, j} P(x_i, y_i) \log P(x_i, y_i)
+\end{aligned}
+$$
+- Liên tục
+$$
+I(X, Y)=H(X, Y)=-\int_{x, y} w(x, y) \log w(x, y) d x d y
+$$
+6. Độ bất định có điều kiện
+- Rời rạc
+$$
+\begin{aligned}
+& I(x_i / y_i)=-\log P(x_i / y_i) \\
+& I(X / Y)=H(X / Y)=-\sum_{i, j} P(x_i, y_i) \log P(x_i / y_i) \\
+& I(Y / X)=H(Y / X)=-\sum_{i, j} P(x_i, y_i) \log P(y_i / x_i)
+\end{aligned}
+$$
+- Liên tục
+$$
+\begin{aligned}
+& H(X / Y)=I(X / Y)=-\int_{x, y} w(x, y) \log w(x / y) d x d y \\
+& H(Y / X)=I(Y / X)=-\int_{x, y} w(x, y) \log w(y / x) d x d y
+\end{aligned}
+$$
+7. Quan hệ giữa các Entropi
+- $\mathrm{H}(\mathrm{X}, \mathrm{Y})=\mathrm{H}(\mathrm{X})+\mathrm{H}(\mathrm{Y} / \mathrm{X})$
+$$
+=\mathrm{H}(X)+\mathrm{H}(X / Y)
+$$
+- $\mathrm{H}(\mathrm{Y} / \mathrm{X})=\mathrm{H}(\mathrm{Y})$
+$$
+H(Y / X)=H(X)
+$$
+Nễu $X, Y$ độc lập thỗng kê
+8. Lượng tin tương hỗ
+$$
+I(x_i ; y_i)=H(x_i)-H(x_i / y_i)=\log \frac{p(x_i / y_i)}{p(x_i)}
+$$
+$$
+I(x_i ; y_i)=I(x_i)+I(y_i)-I(x_i, y_i)
+$$
+9. Lượng tin tương hỗ trung bình
+- Nguồn rời rạc
+$$
+\begin{aligned}
+I(X ; Y) & =\sum_{i, j} p(x_i, y_j) \log \frac{p(x_i / y_j)}{p(x_i)} \\
+& =\sum_{i, j} p(x_i, y_j) \log \frac{p(x_i, y_j)}{p(x_i) \cdot p(y_j)} \\
+& =\sum_{i, j} p(x_i, y_j) \log \frac{p(y_j / x_i)}{p(y_j)} \\
+I(X ; Y) & =H(X)-H(X / Y) \\
+& =H(X)+H(Y)-H(X, Y) \\
+& =H(Y)-H(Y / X)
+\end{aligned}
+$$
+10. Tốc độ lập tin của nguôn
+$$
+R(X)=n_0 . H(X)
+$$
+- Nguồn rời rạc
+$n_0$ - Tần số tạo tin của nguồn
+$$
+R(X)=F . H(X)
+$$
+Nếu $\mathrm{p}(x_{\mathrm{i}})=\mathrm{p} \quad d$
+$$
+R=F \cdot \log (N)
+$$
+- Nguônn liên tục
+$$
+R=2 F_{\max } H(X)
+$$
+- Nguồn có giá trị đỉnh hữu hạn
+$$
+\begin{aligned}
+& \{\begin{array}{l}
+X=\{x\} \quad x_{\min } \leq x \leq x_{\max } \\
+w(x)=w=\frac{d(\frac{1}{N})}{d x}=0
+\end{array}. \\
+& R=2 F_{\max } \log (x_{\max }-x_{\min }) \\
+&
+\end{aligned}
+$$
+- Nguồn có công suất trung bình hữu hạn
+$$
+\begin{gathered}
+\{\begin{array}{c}
+X=\{x\} \quad-\infty<x<+\infty \\
+w(x) \quad P_{t b}<\infty
+\end{array}. \\
+R=2 F_{\max } \cdot \log \sqrt{2 \Pi \mathbf{e} P_{t b}}
+\end{gathered}
+$$
+11. Thông lượng của kênh
+$$
+C=n_0 . I(X, Y)
+$$
+- Kênh rời rạc
+$$
+C=\Delta f . H(X)_{\max }
+$$
+- Kênh liên tục
+$$
+C=2 \Delta f[H(Y)-H(N)]
+$$
+Thường là nhiễu chuẩn
+$$
+\begin{aligned}
+& H(N)=\log \sqrt{2 \Pi \mathrm{T} e N} \\
+& .C=2 \Delta \boldsymbol{( l o g} \sqrt{2 \Pi e P_y}-\log \sqrt{2 \Pi \mathrm{e} N}) \\
+& =\Delta f \log (1+\frac{P_x}{N})=\Delta f \log (1+\frac{S}{N}) \\
+&
+\end{aligned}
+$$

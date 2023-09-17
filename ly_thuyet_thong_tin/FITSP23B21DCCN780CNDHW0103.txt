@@ -1,0 +1,6 @@
+# Test case 1:
+Input
+DMC = {
+    'codename': 'C',
+    'codewords': ['1', '01', '001', '000']
+}

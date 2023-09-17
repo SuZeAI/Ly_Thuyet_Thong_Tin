@@ -1,0 +1,12 @@
+age,sex,Blood_pressure,cholesterol,solution
+young,female,H,N,A
+young,female,H,H,A
+mid_age,female,H,N,B
+old,female,N,N,B
+old,male,L,N,B
+old,male,L,H,A
+mid_age,male,L,C,B
+young,female,N,N,A
+young,male,L,N,B
+old,male,N,N,B
+young,mal,N,H,B

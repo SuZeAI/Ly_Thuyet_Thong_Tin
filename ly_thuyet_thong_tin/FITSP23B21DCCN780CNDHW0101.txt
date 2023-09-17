@@ -1,0 +1,21 @@
+# Test case 1:
+Input
+age,sex,Blood_pressure,cholesterol,solution
+young,female,H,N,A
+young,female,H,H,A
+mid_age,female,H,N,B
+old,female,N,N,B
+old,male,L,N,B
+old,male,L,H,A
+mid_age,male,L,C,B
+young,female,N,N,A
+young,male,L,N,B
+old,male,N,N,B
+young,mal,N,H,B
+Output
+val: [None], type: [None], IG: [0.20931] ||||
+val: [None], type: [1], IG: [0.97095] |||| val: [None], type: [2], IG: [0.0] |||| val: [None], type: [3], IG: [0.12255] ||||
+val: [None], type: [1], IG: [0.0] |||| val: [None], type: [2], IG: [0.0] |||| val: [None], type: [3], IG: [0.0] |||| val: [2], type: [None], IG: [0.0] |||| val: [None], type: [1], IG: [0.0] |||| val: [None], type: [2], IG: [0.25163] ||||
+val: [1], type: [None], IG: [0.0] |||| val: [2], type: [None], IG: [0.0] |||| val: [2], type: [None], IG: [0.0] |||| val: [2], type: [None], IG: [0.0] |||| val: [None], type: [3], IG: [1.0] |||| val: [None], type: [2], IG: [0.0] ||||
+val: [None], type: [1], IG: [0.0] |||| val: [None], type: [2], IG: [0.0] |||| val: [2], type: [None], IG: [0.0] ||||
+val: [2], type: [None], IG: [0.0] |||| val: [1], type: [None], IG: [0.0] ||||
